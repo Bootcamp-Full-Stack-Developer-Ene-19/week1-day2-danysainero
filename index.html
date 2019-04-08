@@ -3,92 +3,140 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
 </head>
 
 <body>
     <header>
-        <div class="menu">
-        <a href="#inicio">inicio</a>
-        <a href="#servicios">servicios</a> 
-        <a href="#nosotros">nosotros</a>
-        <select name="" id="">
-            <option value="">Formación</option>
-            <option value="1"><a href="#">Angular 7 + Animations - <small>18 Ene 2019</small></a></option>
-            <option value="2"><a href="#">Angular 7 Avanzado - <small>Próximamente</small></a></option>
-            <option value="3"><a href="#">Docker + Kubernetes - <small>Próximamente</small></a></option>
-            <option value="4"><a href="#">NodeJs - <small>Próximamente</small></a></option>
-            <option value="5"><a href="#">CSS + Sass Avanzado - <small>Próximamente</small></a></option>
-            <option value="6"><a href="#">VueJs 2 - <small>Próximamente</small></a></option>
-        </select>
-        <a href="#referencia">referencia</a>
-        <a href="#contacto">contacto</a>
-    </div>
-        <div class="search">
-        <form action="" method="">
-            <label for="search">Buscar en Campus</label>
-            <input type="search">
-            <input type="submit" value="Buscar" class="search-button"></button>
+        <nav class="navbar">
+            <a class="navbar__link" href="#">inicio</a>
+            <a class="navbar__link" href="#">servicios</a>
+            <a class="navbar__link" href="#">nosotros</a>
+            <!-- Dropdown-->
+            <div class="dropdown">
+                <button class="navbar__link dropdown__btn"  type="button">Formacion</button>
+                <div class="dropdown__menu">
+                    <ul class="navbar__list">
+                        <li><a class="navbar__link" href="#"> 7 + Animations - <span> Ene 2019</span></a></li>
+                        <li><a class="navbar__link" href="#"> 7 Avanzado - <span>Proximamente</span></a></li>
+                        <li><a class="navbar__link" href="#">Docker + Kubernetes - <span>Proximamente</span></a></li>
+                        <li><a class="navbar__link" href="#">NodeJS - <span>Proximamente</span></a></li>
+                        <li><a class="navbar__link" href="#">CSS + Sass Avanzado- <span>Proximamente</span></a></li>
+                        <li><a class="navbar__link" href="#">VueJS 2 - <span>Proximamente</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//.dropdown las dos barras indica que se acaba la clase ahí-->
+            <a class="navbar__link" href="#">referencia</a>
+            <a class="navbar__link" href="#">contacto</a>            
+        </nav>
+        <form class="navform navbar" action="">
+            <label class="navform__label" for="search">Buscar en campus</label>
+            <div class="sugerencias">
+                    <input type="text" id="search">
+                    <div class="sugerencias__menu">
+                        <ul>
+                            <li><a href="#">angular 7</a></li>
+                            <li><a href="#">angular 7 + animations</a></li>
+                            <li><a href="#">angular 7 avanzado</a></li>
+                        </ul>
+                        <p role="heading">Otros cursos de formacion</p>
+                        <ul>
+                                <li><a href="#">Bootcamp</a></li>
+                        </ul>
+                    </div>
+            </div>
+            
+            <button class="btn btn--buscar" type="submit">Buscar</button>
+         
+                
         </form>
+        <div class="infolink">
+        <h1 >¡Hola a todos!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <strong>placeat pariatur aliquid</strong> odit doloremque eligendi sed minima hic provident id porro? Dicta,
+            sint.</p>
+        <a class="btn btn--info" href="#">Mas informacion</a>
         </div>
     </header>
-    <section>
-    <div class="section1">
-        <h1>¡Hola a todos!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias voluptatum repellat distinctio nisi, commodi
-            iusto, provident veritatis id corrupti at et dolorem assumenda repellendus iure adipisci. Sequi nam sit at!
-        </p>
-        <a class="btnmasinfo" href="#">Más información</a>
-    </div>
-</section>
-    
-        <div>
-            <div>
-                <h2><a href="#">Angular 7 + Animations</a></h2>
-                <img src="..." alt="imagen1">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+    <main>
+        <!--cursos-->
+        <div class="cursos">
+            <article class="cursos__article">
+                <h2><a class="cursos__link" href="#">Angular 7 + Animations</a></h2>
+                <img class="cursos__media" height="150px" width="150px" src="..." alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem repellendus ullam repudiandae
+                    nobis quidem architecto,
+                    alias rem consequatur modi voluptate temporibus quam quasi earum quisquam, aspernatur dolorum
+                    ratione? Eum!</p>
+            </article>
+            <article class="cursos__article">
+                <h2><a class="cursos__link" href="#">Docker + Kubernetes</a></h2>
+                <img class="cursos__media" height="150px" width="150px" src="..." alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem repellendus ullam repudiandae
+                    nobis quidem architecto,
+                    alias rem consequatur modi voluptate temporibus quam quasi earum quisquam, aspernatur dolorum
+                    ratione? Eum!</p>
+
+            </article>
+            <article class="cursos__article">
+                <h2><a class="cursos__link" href="#">NodeJs</a></h2>
+                <img class="cursos__media" height="150px" width="150px" src="..." alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem repellendus ullam repudiandae
+                    nobis quidem architecto,
+                    alias rem consequatur modi voluptate temporibus quam quasi earum quisquam, aspernatur dolorum
+                    ratione? Eum!</p>
+
+            </article>
+        </div><!--//.cursos-->
+
+        <article class="convocatorias">
+            <div class="convocatorias__media">
+                <video height="200px" width="400px" controls>
+                    <source src="..." type="....">
+                </video>
+            </div>    
+            <div class="convocatorias__info">
+                <h2>Proximas convocatorias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis unde architecto odit optio culpa animi iusto a, eum expedita qui distinctio perferendis</p>
+                <form action="..."></form>
+                <label for="email">Indica tu correo electronico</label>
+                <input type="email" id="email">
+                <button class="btn" type="submit">Me apunto!</button>
             </div>
-            <div>
-                <h2><a href="#">Docker + Kubernetes</a></h2>
-                <img src="" alt="imagen2">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
-            </div>
-            <div>
-                <h2><a href="#">NodeJS</a></h2>
-                <img src="" alt="imagen3">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
-            </div>
-        </div>
-        <div>
-            <video src="" controls>
-                Tu navegador no implementa el elemento <code>video</code>.
-            </video>
-            <h2>Próximas convocatorias</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur laborum nisi veniam hic voluptatum
-                nihil culpa repellendus ducimus corrupti vel quos quisquam, in autem expli
-            </p>
-            <form action="..." method="">
-                    <div>
-                            <label for="email">Indica tu correo electrónico</label>
-                            <input type="email" id="email" placeholder="Introduce un email valido">
-                    </div>
-                    <div>
-                        <input type="submit" value="Me apunto!">
-                    </div>
-            </form>
-        </div>
-        <footer>
-            <div>
-                <a href="#inicio">inicio</a>
-                <a href="#servicios">servicios</a>
-                <a href="#nosotros">nosotros</a>
-                <a href="#formacion">formacion</a>
-                <a href="#referencia">referencia</a>
-                <a href="#contacto">contacto</a>
-            </div>
+        </article>
+        <article class="infolink--servicios">
+            <h2>Servicios de apoyo profesional</h2>
+            <p class="infolink__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti repudiandae ipsum fuga! Animi incidunt assumenda obcaecati iste dolorum provident quasi fugit architecto, amet rem itaque neque dolores saepe officiis velit.</p>
+            <a class="btn btn--lorem" href="#">lorem ipsum</a>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul class="footer__list">
+           <li class="footer__element-list">
+               <a class="footer__element-link" href="#">inicio</a>
+            </li>
+           <li class="footer__element-list">
+               <a class="footer__element-link" href="#">servicios</a>
+            </li>
+           <li class="footer__element-list">
+               <a class="footer__element-link" href="#">nosotros</a>
+            </li>
+           <li class="footer__element-list">
+               <a class="footer__element-link" href="#">formacion</a>
+            </li>
+           <li class="footer__element-list">
+               <a class="footer__element-link" href="#">referencia</a>
+            </li>
+           <li class="footer__element-list">
+               <a class="footer__element-link" href="#">contacto</a>
+            </li>
+        </ul>
+
+        <span class="footer__copyright">&copy; Company 2018</span>
     </footer>
 </body>
 
