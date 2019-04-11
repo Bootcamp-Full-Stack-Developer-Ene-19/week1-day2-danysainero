@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
+</head>
+
+<body>
+    
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="navbar__item" href="#">inicio</a>
+            <a class="navbar__item" href="#">servicios</a>
+            <a class="navbar__item" href="#">nosotros</a>
+            <!-- Dropdown-->
+            <div class="dropdown dropdown--link navbar__item">
+                <button class="dropdown__btn"  type="button">Formacion</button>
+                <div class="dropdown__menu">
+                    <ul class="dropdown__list">
+                        <li><a class="dropdown__item" href="#"> 7 + Animations - <span class="dropdown__info"> Ene 2019</span></a></li>
+                        <li><a class="dropdown__item" href="#"> 7 Avanzado - <span class="dropdown__info">Proximamente</span></a></li>
+                        <li><a class="dropdown__item" href="#">Docker + Kubernetes - <span class="dropdown__info">Proximamente</span></a></li>
+                        <li><a class="dropdown__item" href="#">NodeJS - <span class="dropdown__info">Proximamente</span></a></li>
+                        <li><a class="dropdown__item" href="#">CSS + Sass Avanzado- <span class="dropdown__info">Proximamente</span></a></li>
+                        <li><a class="dropdown__item" href="#">VueJS 2 - <span class="dropdown__info">Proximamente</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//.dropdown las dos barras indica que se acaba la clase ahí-->
+            <a class="navbar__item" href="#">referencia</a>
+            <a class="navbar__item" href="#">contacto</a>            
+        </nav>
+        <form class="search" action="">
+            <label class="search__label" for="search">Buscar en campus</label>
+            <div class="dropdown">
+                    <input class="dropdown__search" type="text" id="search">
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a class="dropdown__item" href="#">angular 7</a></li>
+                            <li><a class="dropdown__item" href="#">angular 7 + animations</a></li>
+                            <li><a class="dropdown__item" href="#">angular 7 avanzado</a></li>
+                        </ul>
+                        <p role="heading" class="dropdown__heading">Otros cursos de formacion</p>
+                        <ul>
+                                <li><a class="dropdown__item" href="#">Bootcamp</a></li>
+                        </ul>
+                    </div>
+            </div>
+            
+            <button class="btn search__btn" type="submit">Buscar</button>   
+        </form>       
+    </header>
+    <div class="container-jumbotron">
+    <div class="jumbotron container">
+            <h1 class="jumbotron__heading">¡Hola a todos!</h1>
+            <div class="jumbotron__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <strong>placeat pariatur aliquid</strong> odit doloremque eligendi sed minima hic provident id porro? Dicta,
+                sint.</p>
+            <a class="jumbotron__btn btn btn--success btn--lg" href="#">Mas informacion</a>
+           </div>
+         </div>
+        </div>
+    <div class="container">
+    <main class="main">
+            
+        <!--cursos-->
+        <div class="media">
+            <article class="media__item">
+                <h2 class="media__heading">
+                    <a class="media__link" href="#">Angular 7 + Animations</a></h2>
+                <img class="media__media" height="150px" width="150px" src="images/curso.png" alt="...">
+                <div class="media__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+                </div>
+            </article>
+            <article class="media__heading">
+                <h2><a class="media__link" href="#">Docker + Kubernetes</a></h2>
+                <img class="media__media" height="250px" width="150px" src="images/curso.png" alt="..."><div class="media__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p></div>
+
+            </article>
+            <article class="media__item">
+                <h2 class="media__heading">
+                    <a class="media__link" href="#">NodeJs</a></h2>
+                <img class="media__media" height="150px" width="150px" src="images/curso.png" alt="..."><div class="media__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p></div>
+
+            </article>
+        </div><!--//.cursos-->
+
+        <article class="subscription">
+            <div class="subscription__container">                
+                <video class="subscription__media" height="358px" width="500px" controls>
+                    <source src="..." type="....">
+                </video>            
+            </div>
+               
+            <div class="convocatorias">
+                <h2>Proximas convocatorias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis unde architecto odit optio culpa animi iusto a, eum expedita qui distinctio perferendis</p>
+                <form action="..." class="newsletter">
+                <label class="newsletter__label" for="email">Indica tu correo electronico</label>
+                <input class="newsletter__control" type="email" id="email">
+                <button class="newsletter__btn btn" type="submit">Me apunto!</button>
+            </form>
+            </div>
+        
+        </article>
+
+        <article class="jumbotron--sm jumbotron--light">
+            <h2 class="jumbotron__heading">Servicios de apoyo profesional</h2>
+            <div class="jumbotron__body">
+            <p class="infolink__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse aspernatur, natus quidem voluptas.</p>
+            <a class="jumbotron__btn btn" href="#">lorem ipsum</a>
+        </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <ul class="list-inline">
+           <li class="list-inline__item">
+               <a class="list-inline__link" href="#">inicio</a>
+            </li>
+           <li class="list-inline__item">
+               <a class="list-inline__link" href="#">servicios</a>
+            </li>
+           <li class="list-inline__item">
+               <a class="list-inline__link" href="#">nosotros</a>
+            </li>
+           <li class="list-inline__item">
+               <a class="list-inline__link" href="#">formacion</a>
+            </li>
+           <li class="list-inline__item">
+               <a class="list-inline__link" href="#">referencia</a>
+            </li>
+           <li class="list-inline__item">
+               <a class="list-inline__link" href="#">contacto</a>
+            </li>
+        </ul>
+
+        <span class="site-footer__copy">&copy; Company 2018</span>
+    </footer>
+</div>
+</div>
+</body>
+
+</html>
