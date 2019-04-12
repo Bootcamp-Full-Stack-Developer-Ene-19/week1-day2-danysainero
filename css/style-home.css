@@ -1,0 +1,266 @@
+/*----------------------
+GLOBAL
+--------------------------*/
+body{
+    font-family: "Helvetica", "Arial", "Sans-serif";
+    line-height: 1.4;
+}
+
+p, ul, ol, dl {
+    margin-bottom: 1rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container--flexbox {
+    display: flex;
+}
+
+/*----------------------
+HEADER STYLE
+--------------------------*/
+.site-header{
+    display: flex;
+    background-color:#4a4a4a;
+    color: #ccc;
+    justify-content: space-between;    
+}
+
+/*navbar
+--------------------------*/
+.navbar{
+display: flex;
+height: 56px;
+}
+
+.navbar__item{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 19px;
+    padding-right: 19px;
+    text-decoration: none;
+    }
+
+.navbar__item:hover{
+    background-color: rgba(255, 255, 255, 0.16);
+}    
+
+/*search-form
+--------------------------*/
+.search {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.search__label {
+    margin-right: 16px;
+}
+.search__btn {
+    border:0;
+    background-color: #ffe55d;
+    border-radius: 4px;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-family: "Helvetica", "Arial", "Sans-serif";
+    height: 37px;
+    padding-left:14px;
+    padding-right:14px;
+    margin-left: 8px;
+cursor: pointer;
+}
+
+/* ----------------------------------------
+   DROPDOWN
+---------------------------------------- */
+[aria-expanded="false"] + .dropdown__menu {
+    display: none;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown__btn {
+    font-family: "Helvetica", "Arial", "Sans-serif"; 
+    font-size: 1rem;
+
+  }
+  
+  .dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    min-width: 15rem;
+    border: 1px solid #ddd;
+    margin-top: 4px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .15);
+  }
+  
+  .dropdown__menu--divider {
+    border-top: 1px solid #ddd;
+    margin: .4rem 0;
+  }
+  
+  .dropdown__menu a {
+    display: block;
+    padding: .3rem .8rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown__menu a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .dropdown--link .dropdown__btn{
+background-color: transparent;
+color: #fff;
+border: none;
+  }
+
+  .dropdown__control{
+      height: 37px;
+      border: 0;
+      border-radius: 4px;
+      width:203px;
+  }
+
+  /* ----------------------------------------
+   JUMBOTRON
+---------------------------------------- */
+.jumbotron{
+    background-color: #efefef;
+    padding: 45px 0 65px;
+}
+.jumbotron__heading {
+    font-weight: 100;
+    font-size: 62px;
+    margin-bottom: 12px;
+    color: #4a4a4a;
+}
+.jumbotron__body {
+    max-width: 833px; 
+}
+
+.jumbotron__body p:last-of-type {
+margin-bottom: 25px;
+}
+
+.jumbotron--light {
+    background-color: transparent;
+}
+/* small version jumbotron
+---------------------------------------- */
+.jumbotron--sm {
+text-align: center;
+}
+.jumbotron--sm .jumbotron--heading {
+    font-size: 34px;
+    }
+
+.jumbotron--sm .jumbotron__body{
+    max-width: 1040px;
+    margin: 0 auto;
+}    
+/* ----------------------------------------
+BUTTON
+---------------------------------------- */
+
+.btn{
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    font-family: "Helvetica", "Arial", "Sans-serif"; 
+    background-color: #4a90e2;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 16px;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+    background-color: #3677C3;
+}
+
+.btn--lg{
+font-size: 20px;
+padding: 18px 20px;
+}
+
+.btn--success {
+    background-color: #7ed321;   
+}
+
+.btn--success:hover {
+    background-color: #69b11a;   
+}
+
+/* ----------------------------------------
+MEDIA
+---------------------------------------- */
+.media {
+    padding: 64px 0;
+}
+
+.media__item {
+    flex: 1 1 20%;
+    padding: 0 15px;
+}
+
+.media__item:first-of-type {
+    padding-left: 0px; 
+}
+.media__item:last-of-type {
+    padding-right: 0px; 
+}
+
+/* ----------------------------------------
+SUBSCRIPTION
+---------------------------------------- */
+
+.subscription {
+    display: flex;
+    background-color: #e8f6fc;
+    padding: 100px 0;
+    justify-content: center;
+}
+.subscription__col-media {
+    flex: 0 1 500px;
+    max-width: 500px;
+    margin-right: 30px;
+}
+.subscription__media{
+    width: 100%;
+}
+
+.subscription__col-body{
+    flex: 0 1 300px;
+    max-width: 300px;
+}
+/* ----------------------------------------
+LIST INLINE  
+---------------------------------------- */
+.list-inline {
+    display: flex;
+
+}
+.list-inline__item + .list-inline__item{
+    margin-left: 37px;
+}
+
+/* ----------------------------------------
+FOOTER  
+---------------------------------------- */
+.site-footer__copy {
+    margin-left: auto;
+}
+
+
